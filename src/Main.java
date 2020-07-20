@@ -1,12 +1,16 @@
+package src;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.Map;
 import java.util.HashMap;
 
-class Main {
+import src.GUI;
+
+public class Main {
   private Map<String, String> cardData = new HashMap<>();
-  private String seperator = "@";
+  private String seperator = " @ ";
 
   void loadData() {
     try {
@@ -32,6 +36,7 @@ class Main {
     Main m = new Main();
     m.loadData();
     m.printValues();
-    // m.startGUI(cardData);
+    GUI gui = new GUI(cardData);
+
   }
 }

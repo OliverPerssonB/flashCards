@@ -1,2 +1,24 @@
-kostnad@Något resurs som förbrukas vid skapandet av värde hos företaget
-intäkt@pengar in från försäljning av tjänster eller varor
+Ekonomi @ Ekonomi handlar om hushållning, administration med begränsade resurser. Ekonomi är brett och har därför olika inriktningar såsom företagsekonom, nationalekonomi osv.
+Ekonomisk analys @ Användning av kalkyler för att utvärdera det ekonomiska värdet av ett fenomen givet en tidpunkt. Vad kostar det att framställa produkt A? Bör investeringen B genomföras? Hur lönsamt var företaget C i fjol?
+Affärshändelse @ En transaktion mellan två parter där ena parten får en resurs i utbyte mot betalning eller annat.
+Utgift @ Värdet av en köpt resurs
+Inkomst @ Värdet av en såld resurs
+Utbetalning @ Kassaflöde ut från ett företag
+Inbetalning @ Kassaflöde in till ett företag
+Kostnad @ Värdet av en förbrukad resurs, i en större kontext
+Intäkt @ Värdet av en prestation, såsom arbete, såld produkt osv.
+Resultat @ Skillnaden mellan intäkter och kostnader under en viss period.
+Lönsamhet @ Relation mellan resultat under en period och det kapital som utnyttjats under perioden.
+Alternativkostnad @ Det värde man går miste om genom att inte välja det bästa alternativet att utnyttja resurser på.
+Rörlig kostnad @ En kostnad som ändras när produktions- eller försäljningsvolymen ändras.
+Fast kostnad @ En kostnad som INTE ändras när produktions- eller försäljningsvolymen ändras.
+Kritisk volym @ Den volym där total intäkt och total kostnad är lika stor. Break-even
+Kalkylobjekt @ En vara, tjänst eller något annat som man vill beräkna den "faktiska" kostnaden för, kallas även kostnadsbärare.
+Direkt kostnad @ En kostnad som är direkt associerad till ett visst kalkylobjekt.
+Indirekt kostnad @ En kostnad som är gemensam för flera kalkylobjekt, kallas även omkostnad.
+Samkostnad @ En kostnad som INTE påverkas av vilket beslut som fattas i en viss beslutssituation.
+Särkostnad @ En kostnad som uppkommer eller faller ifrån, till följd av ett visst beslut.
+Särintäkt @ En intäkt som uppkommer eller faller ifrån, till följd av ett visst beslut.
+Täckningsbidrag, TB @ Differensen mellan särintäkt och särkostnad.
+Bidragskalkylering @ Kalkylering baserad på täckningsbidrag.
+Operationell kostnad @ Särkostnad plus alternativkostnad 

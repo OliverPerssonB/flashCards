@@ -1,4 +1,4 @@
-Ekonomi @ Ekonomi handlar om hushållning, administration med begränsade resurser. Ekonomi är brett och har därför olika inriktningar såsom företagsekonom, nationalekonomi osv.
+Ekonomi @ Ekonomi handlar om hushållning, administration med begränsade resurser. Ekonomi är brett och har därför olika inriktningar såsom företagsekonomi, nationalekonomi osv.
 Ekonomisk analys @ Användning av kalkyler för att utvärdera det ekonomiska värdet av ett fenomen givet en tidpunkt. Vad kostar det att framställa produkt A? Bör investeringen B genomföras? Hur lönsamt var företaget C i fjol?
 Affärshändelse @ En transaktion mellan två parter där ena parten får en resurs i utbyte mot betalning eller annat.
 Utgift @ Värdet av en köpt resurs
@@ -21,4 +21,4 @@ Särkostnad @ En kostnad som uppkommer eller faller ifrån, till följd av ett v
 Särintäkt @ En intäkt som uppkommer eller faller ifrån, till följd av ett visst beslut.
 Täckningsbidrag, TB @ Differensen mellan särintäkt och särkostnad.
 Bidragskalkylering @ Kalkylering baserad på täckningsbidrag.
-Operationell kostnad @ Särkostnad plus alternativkostnad 
+Operationell kostnad @ Särkostnad plus alternativkostnad

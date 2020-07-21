@@ -37,6 +37,5 @@ public class Main {
     m.loadData();
     m.printValues();
     GUI gui = new GUI(cardData);
-
   }
 }

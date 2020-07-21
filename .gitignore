@@ -1,2 +1,8 @@
 bin
 *.class
+
+# Intellij
+workspace.xml
+usage.statistics.xml
+tasks.xml
+shelf

@@ -1,9 +1,11 @@
 package src;
 
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.collections.ObservableList;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
@@ -28,7 +30,6 @@ public class GUI extends Application {
   public void start(Stage primaryStage) throws Exception {
 
     FlowPane fp = new FlowPane(hgap, vgap);
-    //creating a Group object
     ObservableList<Node> obsList = fp.getChildren();
 
     for (int i = 1; i < 6; i++) {
@@ -36,6 +37,12 @@ public class GUI extends Application {
       l.setStyle("background-color: white;");
       obsList.add(l);
     }
+
+    Button exit = new Button("Stop");
+    exit.setCancelButton(true);
+    exit.setOnAction(e -> Platform.exit());
+    obsList.add(exit);
+
     fp.setHgap(hgap);
     fp.setVgap(vgap);
 
@@ -43,7 +50,7 @@ public class GUI extends Application {
     Scene scene = new Scene(fp ,900, 500);
 
     //setting color to the scene
-    scene.setFill(Color.DARKGREY);
+    scene.setFill(Color.BLACK);
 
     //Setting the title to Stage.
     primaryStage.setTitle("Flash Cards");

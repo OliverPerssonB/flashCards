@@ -1,10 +1,16 @@
 package src;
 
 import javafx.application.Application;
+import javafx.collections.ObservableList;
+import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.scene.layout.FlowPane;
+
 
 public class GUI extends Application {
   private Util util;
@@ -26,15 +32,18 @@ public class GUI extends Application {
     ObservableList<Node> obsList = fp.getChildren();
 
     for (int i = 1; i < 6; i++) {
-      Label l = new Label("Label #" + i);
+      TextField l = new TextField("Label #" + i);
+      l.setStyle("background-color: white;");
       obsList.add(l);
     }
+    fp.setHgap(hgap);
+    fp.setVgap(vgap);
 
     //Creating a Scene by passing the group object, height and width
     Scene scene = new Scene(fp ,900, 500);
 
     //setting color to the scene
-    scene.setFill(Color.BLUE);
+    scene.setFill(Color.DARKGREY);
 
     //Setting the title to Stage.
     primaryStage.setTitle("Flash Cards");

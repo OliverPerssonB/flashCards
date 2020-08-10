@@ -11,12 +11,8 @@ class Model {
   }
 
   Pair<String, String> getNextPair() {
-    if (index < cardData.size()) {
-      Pair<String, String> res = cardData.get(index);
-      index++;
-      return res;
-    } else {
-      throw new Exception("No more pairs and asked for more, should not occur")
-    }
+    Pair<String, String> res = cardData.get(index);
+    index++;
+    return res;
   }
 }

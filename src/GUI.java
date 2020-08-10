@@ -6,41 +6,41 @@ import javafx.collections.ObservableList;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.scene.layout.FlowPane;
 
 
 public class GUI extends Application {
-  private Util util;
   private Model model;
   final private double hgap = 10.0;
   final private double vgap = 10.0;
 
   @Override
   public void init() {
-    util = new Util();
-    model = new Model(util.loadData());
+    model = new Model(Util.loadData());
   }
 
   @Override
   public void start(Stage primaryStage) throws Exception {
-
     FlowPane fp = new FlowPane(hgap, vgap);
     ObservableList<Node> obsList = fp.getChildren();
-
-    for (int i = 1; i < 6; i++) {
-      TextField l = new TextField("Label #" + i);
-      l.setStyle("background-color: white;");
-      obsList.add(l);
-    }
+    TextField word = new TextField("Word");
+    TextField explanation = new TextField("Explanation");
+    obsList.add(word);
+    obsList.add(explanation);
 
     Button exit = new Button("Stop");
     exit.setCancelButton(true);
     exit.setOnAction(e -> Platform.exit());
+    obsList.add(exit);
+
+    Button show = new Button("Show");
+    show.setCancelButton(true);
+    show.setOnAction(e -> {
+      System.out.println("Should show answer!");
+    });
     obsList.add(exit);
 
     fp.setHgap(hgap);
@@ -65,6 +65,10 @@ public class GUI extends Application {
   @Override
   public void stop() throws Exception {
     System.out.println("Something went wrong, not doing anything in stop method yet.");
+  }
+
+  private void setUpWord() {
+    
   }
 
   public static void main(String[] args) {

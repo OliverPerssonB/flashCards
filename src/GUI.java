@@ -30,7 +30,7 @@ public class GUI extends Application {
 
   @Override
   public void start(Stage primaryStage) throws Exception {
-    // Group
+    // Group, root node, can also be branch node if nested in another group
     FlowPane fp = new FlowPane(hgap, vgap);
     fp.setPadding(new Insets(10,10,10,10));
     fp.setAlignment(Pos.CENTER);
@@ -42,6 +42,7 @@ public class GUI extends Application {
 
     Pair<String, String> currentPair = model.getNextPair();
 
+    // Leaf node, cannot have children
     TextField word = new TextField(currentPair.first);
     word.setPrefSize(100, 100);
     word.setFont(new Font(15));
@@ -60,6 +61,9 @@ public class GUI extends Application {
         explanation.setText(currentPair.second);
         Button next = new Button("next?");
         obsList.add(next);
+        if (!model.isShown) {
+          System.out.println("showing ...");
+        }
     });
     obsList.add(show);
 
